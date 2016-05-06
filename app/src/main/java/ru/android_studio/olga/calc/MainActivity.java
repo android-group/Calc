@@ -7,8 +7,8 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.olga.calc.R;
-//import butterknife;
 
+@SuppressWarnings("ALL")
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private final static String TAG = "MainTAG";
     private TextView result;
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         result = (TextView) findViewById(R.id.textView_result);
 
+        //noinspection ConstantConditions,ConstantConditions
         findViewById(R.id.button_1).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
